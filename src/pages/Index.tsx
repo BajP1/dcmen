@@ -1,16 +1,204 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Link } from "react-router-dom";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const HomePage = () => {
+  const scrollRef = useScrollAnimation();
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div ref={scrollRef}>
+      {/* Hero Section */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1920&q=80"
+            alt="Bespoke tailoring"
+            className="w-full h-full object-cover animate-slow-zoom"
+          />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(26,26,26,0.5), rgba(26,26,26,0.3))" }} />
+        </div>
+        <div className="relative z-10 text-center px-6 max-w-4xl">
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ color: "#F5F2ED" }}>
+            Crafted for the Modern Gentleman
+          </h1>
+          <p className="text-lg md:text-xl mb-10 font-light tracking-wide" style={{ color: "rgba(245,242,237,0.85)" }}>
+            Bespoke Tailoring & Premium Menswear in Amritsar
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-glow inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-md text-sm tracking-wide uppercase transition-all duration-300 hover:bg-primary/90"
+            >
+              Book Appointment
+            </a>
+            <a
+              href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-whatsapp-glow inline-flex items-center justify-center px-8 py-4 rounded-md text-sm tracking-wide uppercase font-medium transition-all duration-300"
+              style={{ backgroundColor: "hsl(var(--whatsapp))", color: "#fff" }}
+            >
+              WhatsApp Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Brand Introduction */}
+      <section className="py-24 px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div className="scroll-fade-in">
+            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">Since Generations</p>
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+              A Legacy of Fine Craftsmanship
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              At DC Men's Zone by Dhian Chand & Co., we blend timeless tailoring traditions with contemporary style. Every stitch tells a story of dedication, precision, and an unwavering commitment to making you look your absolute best.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Located in the heart of Amritsar, our atelier has dressed generations of gentlemen for life's most important moments — from boardroom meetings to wedding celebrations.
+            </p>
+          </div>
+          <div className="scroll-fade-in scroll-fade-in-delay-2 img-hover-zoom rounded-lg overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+              alt="DC Men's Zone craftsmanship"
+              className="w-full h-[500px] object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Services Preview */}
+      <section className="py-24 px-6 lg:px-12 bg-secondary">
+        <div className="max-w-7xl mx-auto text-center mb-16">
+          <p className="scroll-fade-in text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">What We Offer</p>
+          <h2 className="scroll-fade-in font-serif text-3xl md:text-5xl font-bold text-foreground">Our Services</h2>
+        </div>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Bespoke Tailoring",
+              desc: "Custom-crafted suits tailored to your exact measurements and personal style.",
+              img: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=600&q=80",
+            },
+            {
+              title: "Ready-Made Collection",
+              desc: "Curated premium menswear ready to elevate your wardrobe instantly.",
+              img: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&q=80",
+            },
+            {
+              title: "Premium Fabrics",
+              desc: "Handpicked fabrics from the world's finest mills for discerning gentlemen.",
+              img: "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80",
+            },
+          ].map((service, i) => (
+            <Link
+              to="/services"
+              key={service.title}
+              className={`scroll-fade-in scroll-fade-in-delay-${i + 1} group bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300`}
+            >
+              <div className="img-hover-zoom h-64">
+                <img
+                  src={service.img}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-2">{service.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{service.desc}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Fabric Texture Section */}
+      <section className="relative py-32 px-6 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1920&q=80"
+            alt="Premium fabric texture"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 backdrop-blur-sm" style={{ background: "rgba(245,242,237,0.75)" }} />
+        </div>
+        <div className="relative z-10 max-w-3xl mx-auto text-center">
+          <p className="scroll-fade-in text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">The Foundation</p>
+          <h2 className="scroll-fade-in font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">
+            Feel the Fabric
+          </h2>
+          <p className="scroll-fade-in text-muted-foreground leading-relaxed text-lg">
+            Every masterpiece begins with the right material. We source only the finest fabrics — from Italian wool to English tweed — ensuring your garment feels as extraordinary as it looks.
+          </p>
+        </div>
+      </section>
+
+      {/* Gallery Preview */}
+      <section className="py-24 px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto text-center mb-16">
+          <p className="scroll-fade-in text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">Portfolio</p>
+          <h2 className="scroll-fade-in font-serif text-3xl md:text-5xl font-bold text-foreground">Our Work</h2>
+        </div>
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&q=80",
+            "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=400&q=80",
+            "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=400&q=80",
+          ].map((src, i) => (
+            <div
+              key={i}
+              className={`scroll-fade-in scroll-fade-in-delay-${(i % 3) + 1} img-hover-zoom rounded-lg overflow-hidden aspect-[3/4]`}
+            >
+              <img src={src} alt={`Gallery preview ${i + 1}`} className="w-full h-full object-cover" loading="lazy" />
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-10 scroll-fade-in">
+          <Link
+            to="/gallery"
+            className="inline-flex items-center justify-center px-8 py-3 border border-foreground text-foreground text-sm tracking-wide uppercase font-medium rounded-md hover:bg-foreground hover:text-background transition-all duration-300"
+          >
+            View Full Gallery
+          </Link>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 px-6 lg:px-12 bg-secondary">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="scroll-fade-in font-serif text-3xl md:text-5xl font-bold text-foreground mb-6">
+            Ready to Experience Bespoke?
+          </h2>
+          <p className="scroll-fade-in text-muted-foreground text-lg mb-10">
+            Book your appointment today and discover the art of personalized tailoring.
+          </p>
+          <div className="scroll-fade-in flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-glow inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-md text-sm tracking-wide uppercase transition-all duration-300"
+            >
+              Book Appointment
+            </a>
+            <a
+              href="tel:+919872887860"
+              className="inline-flex items-center justify-center px-8 py-4 border border-foreground text-foreground text-sm tracking-wide uppercase font-medium rounded-md hover:bg-foreground hover:text-background transition-all duration-300"
+            >
+              Call Us Now
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
 
-const Index = PlaceholderIndex;
-
-export default Index;
+export default HomePage;
