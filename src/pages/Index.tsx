@@ -79,7 +79,7 @@ const HomePage = () => {
           </div>
           <div className="scroll-fade-in scroll-fade-in-delay-2 img-hover-zoom rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+              src="/ae2d3402-96c5-44ae-bde9-345f6448a1e0.png"
               alt="DC Men's Zone craftsmanship"
               className="w-full h-[500px] object-cover"
               loading="lazy"
@@ -99,17 +99,17 @@ const HomePage = () => {
             {
               title: "Bespoke Tailoring",
               desc: "Custom-crafted suits tailored to your exact measurements and personal style.",
-              img: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=600&q=80",
+              img: "/bcbb9ccb-bb73-4d60-aaab-37fdfead5dd7.jpg",
             },
             {
               title: "Ready-Made Collection",
               desc: "Curated premium menswear ready to elevate your wardrobe instantly.",
-              img: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&q=80",
+              img: "/711914c5-760e-46af-9da6-1f9820c58321.jpg",
             },
             {
               title: "Premium Fabrics",
               desc: "Handpicked fabrics from the world's finest mills for discerning gentlemen.",
-              img: "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80",
+              img: "/b050b834-943d-433f-a6ec-da34cfaf4650.jpg",
             },
           ].map((service, i) => (
             <Link
@@ -164,10 +164,10 @@ const HomePage = () => {
         </div>
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "/5d505617-9674-4faa-a102-d002efbcaf0f.jpg",
             "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&q=80",
-            "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=400&q=80",
-            "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=400&q=80",
+            "/7546f3d8-e80f-4260-8b0a-f7031fb3f0c7.jpg",
+            "/788ac97d-cdc6-4900-a7aa-8ce701159c66.jpg",
           ].map((src, i) => (
             <div
               key={i}
