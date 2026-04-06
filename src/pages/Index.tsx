@@ -1,6 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
-import heroShowroom from "@/assets/hero-showroom.png";
 
 const HomePage = () => {
   const scrollRef = useScrollAnimation();
