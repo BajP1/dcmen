@@ -37,14 +37,14 @@ const Navbar = () => {
         <Link to="/" className="flex flex-col leading-tight">
           <span
             className={`font-serif text-xl md:text-2xl font-bold tracking-wide transition-colors duration-400 ${
-              scrolled || menuOpen ? "text-foreground" : "text-[#F5F2ED]"
+              isHero ? "text-[#F5F2ED]" : "text-foreground"
             }`}
           >
             DC Men's Zone
           </span>
           <span
             className={`text-[10px] md:text-xs tracking-[0.25em] uppercase transition-colors duration-400 ${
-              scrolled || menuOpen ? "text-muted-foreground" : "text-[#F5F2ED]/60"
+              isHero ? "text-[#F5F2ED]/60" : "text-muted-foreground"
             }`}
           >
             Dhian Chand & Co.
