@@ -19,7 +19,7 @@ const HomePage = () => {
             />
           </div>
           {/* Dark gradient overlay */}
-          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.55) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.4) 100%)" }} />
           {/* Warm golden tint */}
           <div className="absolute inset-0" style={{ background: "rgba(139,109,71,0.08)" }} />
           {/* Grain texture overlay */}
