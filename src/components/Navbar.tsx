@@ -29,9 +29,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
-        scrolled || menuOpen ? "navbar-solid" : "navbar-transparent"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-400 navbar-solid"
+      style={{ borderBottom: scrolled ? '1px solid rgba(0,0,0,0.08)' : 'none', boxShadow: scrolled ? '0 2px 12px rgba(0,0,0,0.06)' : 'none' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         <Link to="/" className="flex flex-col leading-tight">
