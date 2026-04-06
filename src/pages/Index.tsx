@@ -1,6 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
-import heroShowroom from "@/assets/hero-showroom.png";
 
 const HomePage = () => {
   const scrollRef = useScrollAnimation();
@@ -10,12 +9,14 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center overflow-hidden">
         {/* Background image with warm tone + blur + zoom */}
-        <div className="absolute inset-0">
-          <img
-            src={heroShowroom}
-            alt="DC Men's Zone showroom"
-            className="w-full h-full object-cover animate-slow-zoom filter blur-[1.5px] saturate-[1.1] sepia-[0.15] brightness-[0.9]"
-          />
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="w-full h-full scale-105">
+            <img
+              src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1920&q=80"
+              alt="DC Men's Zone showroom"
+              className="w-full h-full object-cover animate-slow-zoom saturate-[1.1] sepia-[0.15] brightness-[0.9]"
+            />
+          </div>
           {/* Dark gradient overlay */}
           <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.55) 100%)" }} />
           {/* Warm golden tint */}
