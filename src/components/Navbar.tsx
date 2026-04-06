@@ -34,10 +34,18 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         <Link to="/" className="flex flex-col leading-tight">
-          <span className="font-serif text-xl md:text-2xl font-bold tracking-wide text-foreground">
+          <span
+            className={`font-serif text-xl md:text-2xl font-bold tracking-wide transition-colors duration-400 ${
+              scrolled || menuOpen ? "text-foreground" : "text-[#F5F2ED]"
+            }`}
+          >
             DC Men's Zone
           </span>
-          <span className="text-[10px] md:text-xs tracking-[0.25em] uppercase text-muted-foreground">
+          <span
+            className={`text-[10px] md:text-xs tracking-[0.25em] uppercase transition-colors duration-400 ${
+              scrolled || menuOpen ? "text-muted-foreground" : "text-[#F5F2ED]/60"
+            }`}
+          >
             Dhian Chand & Co.
           </span>
         </Link>
