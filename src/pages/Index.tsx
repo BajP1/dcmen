@@ -99,17 +99,17 @@ const HomePage = () => {
             {
               title: "Bespoke Tailoring",
               desc: "Custom-crafted suits tailored to your exact measurements and personal style.",
-              img: "/bcbb9ccb-bb73-4d60-aaab-37fdfead5dd7.jpg",
+              img: "/bespoke-tailoring.jpg",
             },
             {
               title: "Ready-Made Collection",
               desc: "Curated premium menswear ready to elevate your wardrobe instantly.",
-              img: "/711914c5-760e-46af-9da6-1f9820c58321.jpg",
+              img: "/ready-made-collection.jpg",
             },
             {
               title: "Premium Fabrics",
               desc: "Handpicked fabrics from the world's finest mills for discerning gentlemen.",
-              img: "/b050b834-943d-433f-a6ec-da34cfaf4650.jpg",
+              img: "/premium-fabrics.jpg",
             },
           ].map((service, i) => (
             <Link
