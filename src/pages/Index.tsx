@@ -1,5 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
+import heroShowroom from "@/assets/hero-showroom.png";
 
 const HomePage = () => {
   const scrollRef = useScrollAnimation();
@@ -7,28 +8,42 @@ const HomePage = () => {
   return (
     <div ref={scrollRef}>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center overflow-hidden">
+        {/* Background image with warm tone + blur + zoom */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1920&q=80"
-            alt="Bespoke tailoring"
-            className="w-full h-full object-cover animate-slow-zoom"
+            src={heroShowroom}
+            alt="DC Men's Zone showroom"
+            className="w-full h-full object-cover animate-slow-zoom filter blur-[1.5px] saturate-[1.1] sepia-[0.15] brightness-[0.9]"
           />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(26,26,26,0.5), rgba(26,26,26,0.3))" }} />
+          {/* Dark gradient overlay */}
+          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.55) 100%)" }} />
+          {/* Warm golden tint */}
+          <div className="absolute inset-0" style={{ background: "rgba(139,109,71,0.08)" }} />
+          {/* Grain texture overlay */}
+          <div className="absolute inset-0 hero-grain opacity-[0.04]" />
         </div>
-        <div className="relative z-10 text-center px-6 max-w-4xl">
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ color: "#F5F2ED" }}>
+
+        {/* Left-aligned text content */}
+        <div className="relative z-10 px-8 md:px-16 lg:px-24 max-w-3xl">
+          <h1
+            className="font-serif text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.1] mb-8"
+            style={{ color: "#F5F2ED", textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
+          >
             Crafted for the Modern Gentleman
           </h1>
-          <p className="text-lg md:text-xl mb-10 font-light tracking-wide" style={{ color: "rgba(245,242,237,0.85)" }}>
-            Bespoke Tailoring & Premium Menswear in Amritsar
+          <p
+            className="text-lg md:text-xl lg:text-2xl font-light tracking-wide mb-12"
+            style={{ color: "rgba(245,242,237,0.85)", textShadow: "0 1px 10px rgba(0,0,0,0.4)" }}
+          >
+            Premium Tailoring &amp; Menswear in Amritsar
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-5">
             <a
               href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-glow inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-md text-sm tracking-wide uppercase transition-all duration-300 hover:bg-primary/90"
+              className="btn-glow inline-flex items-center justify-center px-10 py-4 bg-primary text-primary-foreground font-semibold rounded-lg text-sm tracking-widest uppercase transition-all duration-300 hover:bg-primary/85 hover:-translate-y-0.5"
             >
               Book Appointment
             </a>
@@ -36,7 +51,7 @@ const HomePage = () => {
               href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-whatsapp-glow inline-flex items-center justify-center px-8 py-4 rounded-md text-sm tracking-wide uppercase font-medium transition-all duration-300"
+              className="btn-whatsapp-glow inline-flex items-center justify-center px-10 py-4 rounded-lg text-sm tracking-widest uppercase font-semibold transition-all duration-300 hover:-translate-y-0.5"
               style={{ backgroundColor: "hsl(var(--whatsapp))", color: "#fff" }}
             >
               WhatsApp Now
