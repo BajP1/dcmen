@@ -79,7 +79,7 @@ const HomePage = () => {
           </div>
           <div className="scroll-fade-in scroll-fade-in-delay-2 img-hover-zoom rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+              src="/ae2d3402-96c5-44ae-bde9-345f6448a1e0.png"
               alt="DC Men's Zone craftsmanship"
               className="w-full h-[500px] object-cover"
               loading="lazy"
