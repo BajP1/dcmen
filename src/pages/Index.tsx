@@ -12,7 +12,7 @@ const HomePage = () => {
         <div className="absolute inset-0 overflow-hidden">
           <div className="w-full h-full scale-105">
             <img
-              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&q=80"
+              src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1920&q=80"
               alt="DC Men's Zone showroom"
               className="w-full h-full object-cover animate-slow-zoom saturate-[1.1] sepia-[0.15] brightness-[0.9]"
             />
