@@ -1,24 +1,25 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
+import heroShowroom from "@/assets/hero-showroom.png";
 
 const HomePage = () => {
   const scrollRef = useScrollAnimation();
 
   return (
     <div ref={scrollRef}>
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center overflow-hidden">
+      {/* Hero Section - starts below fixed navbar */}
+      <section className="relative min-h-[calc(100vh-5rem)] mt-20 flex items-center overflow-hidden">
         {/* Background image with warm tone + blur + zoom */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="w-full h-full scale-105">
             <img
-              src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1920&q=80"
+              src={heroShowroom}
               alt="DC Men's Zone showroom"
-              className="w-full h-full object-cover animate-slow-zoom saturate-[1.1] sepia-[0.15] brightness-[0.9]"
+              className="w-full h-full object-cover animate-slow-zoom saturate-[1.1] sepia-[0.15] brightness-[0.9] blur-[1px]"
             />
           </div>
           {/* Dark gradient overlay */}
-          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.55) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.4) 100%)" }} />
           {/* Warm golden tint */}
           <div className="absolute inset-0" style={{ background: "rgba(139,109,71,0.08)" }} />
           {/* Grain texture overlay */}
