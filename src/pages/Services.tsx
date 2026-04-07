@@ -12,7 +12,7 @@ const services = [
     title: "Ready-Made Collection",
     subtitle: "Premium Style, Instant Elegance",
     desc: "Our carefully curated ready-made collection features premium suits, blazers, shirts, and trousers. Each piece is crafted with the same attention to quality that defines our bespoke work — perfect for the gentleman who wants exceptional style without the wait.",
-    img: "/84b69fdf-1cbf-4b9e-a9ef-5058e48309c4.jpg",
+    img: "/ready-made-collection-2.jpg",
     reverse: true,
   },
   {
