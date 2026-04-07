@@ -19,7 +19,7 @@ const services = [
     title: "Premium Fabrics",
     subtitle: "The World's Finest Materials",
     desc: "We source fabrics from the most prestigious mills across Italy, England, and beyond. From luxurious Super 150s wool to breathable tropical blends, our fabric library offers an extraordinary range of textures, patterns, and weights for every season and occasion.",
-    img: "/premium-fabrics-2.jpg",
+    img: "/premium-fabrics-3.jpg",
     reverse: false,
   },
 ];
