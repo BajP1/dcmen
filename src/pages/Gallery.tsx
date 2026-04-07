@@ -32,29 +32,10 @@ const Gallery = () => {
         </p>
       </section>
 
-      {/* Filters */}
-      <div className="px-6 lg:px-12 mb-12">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-3">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`px-6 py-2 rounded-full text-sm tracking-wide uppercase transition-all duration-300 ${
-                activeCategory === cat
-                  ? "bg-primary text-primary-foreground"
-                  : "border border-border text-muted-foreground hover:border-foreground hover:text-foreground"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-      </div>
-
       {/* Masonry Grid */}
       <section className="px-6 lg:px-12 pb-24">
         <div className="max-w-7xl mx-auto masonry-grid">
-          {filtered.map((img, i) => (
+          {galleryImages.map((img, i) => (
             <div
               key={`${img.src}-${i}`}
               className="scroll-fade-in img-hover-zoom rounded-lg overflow-hidden cursor-pointer"
