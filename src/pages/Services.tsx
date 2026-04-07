@@ -5,7 +5,7 @@ const services = [
     title: "Bespoke Tailoring",
     subtitle: "Crafted Exclusively for You",
     desc: "Experience the pinnacle of personalized fashion. Our master tailors create suits that are uniquely yours — from the choice of fabric and lining to every button and stitch. Each bespoke piece is a work of art that reflects your personality and fits like a second skin.",
-    img: "/e517537a-8998-43af-86f2-a8a0524f9225.jpg",
+    img: "/b79293a8-b8db-45a7-a413-7b5e0372c1b9.jpg",
     reverse: false,
   },
   {
