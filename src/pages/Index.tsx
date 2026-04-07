@@ -164,10 +164,10 @@ const HomePage = () => {
         </div>
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            "/5d505617-9674-4faa-a102-d002efbcaf0f.jpg",
-            "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&q=80",
-            "/7546f3d8-e80f-4260-8b0a-f7031fb3f0c7.jpg",
-            "/788ac97d-cdc6-4900-a7aa-8ce701159c66.jpg",
+            "/52ef4add-1888-4a53-aa78-5a66dd30ef17.jpg",
+            "/06d5f583-fa12-4e6f-86f2-6f848000af6f.jpg",
+            "/21564b05-23d0-46e9-9547-82811417bd86.jpg",
+            "/5adba766-def1-4c20-95a1-917db47af6ea.jpg",
           ].map((src, i) => (
             <div
               key={i}
