@@ -43,7 +43,7 @@ const Gallery = () => {
             >
               <img
                 src={img.src}
-                alt={`${img.cat} gallery image`}
+                alt={`Gallery image ${i + 1}`}
                 className={`w-full object-cover ${img.h}`}
                 loading="lazy"
               />
