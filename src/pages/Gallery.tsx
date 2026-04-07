@@ -2,31 +2,24 @@ import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { X } from "lucide-react";
 
-const categories = ["All", "Suits", "Wedding", "Fabrics", "Store"];
-
 const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80", cat: "Suits", h: "h-80" },
-  { src: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80", cat: "Wedding", h: "h-96" },
-  { src: "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80", cat: "Fabrics", h: "h-72" },
-  { src: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&q=80", cat: "Suits", h: "h-96" },
-  { src: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=600&q=80", cat: "Suits", h: "h-80" },
-  { src: "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=600&q=80", cat: "Fabrics", h: "h-72" },
-  { src: "https://images.unsplash.com/photo-1600091166971-7f9faad6c1e2?w=600&q=80", cat: "Wedding", h: "h-96" },
-  { src: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=600&q=80", cat: "Store", h: "h-80" },
-  { src: "https://images.unsplash.com/photo-1521341057461-6eb5f40b07ab?w=600&q=80", cat: "Suits", h: "h-72" },
-  { src: "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?w=600&q=80", cat: "Wedding", h: "h-96" },
-  { src: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80", cat: "Fabrics", h: "h-80" },
-  { src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80", cat: "Store", h: "h-72" },
+  { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80", h: "h-80" },
+  { src: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80", h: "h-96" },
+  { src: "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=600&q=80", h: "h-72" },
+  { src: "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&q=80", h: "h-96" },
+  { src: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=600&q=80", h: "h-80" },
+  { src: "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=600&q=80", h: "h-72" },
+  { src: "https://images.unsplash.com/photo-1600091166971-7f9faad6c1e2?w=600&q=80", h: "h-96" },
+  { src: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=600&q=80", h: "h-80" },
+  { src: "https://images.unsplash.com/photo-1521341057461-6eb5f40b07ab?w=600&q=80", h: "h-72" },
+  { src: "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?w=600&q=80", h: "h-96" },
+  { src: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80", h: "h-80" },
+  { src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80", h: "h-72" },
 ];
 
 const Gallery = () => {
   const scrollRef = useScrollAnimation();
-  const [activeCategory, setActiveCategory] = useState("All");
   const [lightbox, setLightbox] = useState<string | null>(null);
-
-  const filtered = activeCategory === "All"
-    ? galleryImages
-    : galleryImages.filter((img) => img.cat === activeCategory);
 
   return (
     <div ref={scrollRef} className="pt-20">
