@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { X } from "lucide-react";
+import { X, Instagram } from "lucide-react";
 
 const galleryImages = [
   { src: "/gallery-13.jpg", h: "h-[28rem]" },
@@ -56,8 +56,9 @@ const Gallery = () => {
           href="https://www.instagram.com/dcmenzone?igsh=NmdsenczMmdlbTEz"
           target="_blank"
           rel="noopener noreferrer"
-          className="scroll-fade-in inline-flex items-center justify-center px-8 py-4 border border-foreground text-foreground text-sm tracking-wide uppercase font-medium rounded-md hover:bg-foreground hover:text-background transition-all duration-300"
+          className="scroll-fade-in inline-flex items-center gap-2 justify-center px-8 py-4 border border-foreground text-foreground text-sm tracking-wide uppercase font-medium rounded-md hover:bg-foreground hover:text-background transition-all duration-300"
         >
+          <Instagram size={18} />
           Follow us on Instagram
         </a>
       </section>

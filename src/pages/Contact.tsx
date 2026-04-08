@@ -59,17 +59,19 @@ const Contact = () => {
                   href="https://www.instagram.com/dcmenzone?igsh=NmdsenczMmdlbTEz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 border border-border text-muted-foreground rounded-md hover:border-foreground hover:text-foreground transition-all text-sm"
+                  className="p-3 border border-border text-muted-foreground rounded-md hover:border-foreground hover:text-foreground transition-all"
+                  aria-label="Instagram"
                 >
-                  Instagram
+                  <Instagram size={22} />
                 </a>
                 <a
                   href="https://www.facebook.com/share/17RKLx5qmU/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 border border-border text-muted-foreground rounded-md hover:border-foreground hover:text-foreground transition-all text-sm"
+                  className="p-3 border border-border text-muted-foreground rounded-md hover:border-foreground hover:text-foreground transition-all"
+                  aria-label="Facebook"
                 >
-                  Facebook
+                  <Facebook size={22} />
                 </a>
               </div>
             </div>
