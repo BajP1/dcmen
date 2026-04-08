@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -53,17 +54,19 @@ const Footer = () => {
               href="https://www.instagram.com/dcmenzone?igsh=NmdsenczMmdlbTEz"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors text-sm"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Instagram"
             >
-              Instagram
+              <Instagram size={22} />
             </a>
             <a
               href="https://www.facebook.com/share/17RKLx5qmU/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors text-sm"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Facebook"
             >
-              Facebook
+              <Facebook size={22} />
             </a>
           </div>
         </div>
