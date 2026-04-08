@@ -164,10 +164,10 @@ const HomePage = () => {
         </div>
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            "/52ef4add-1888-4a53-aa78-5a66dd30ef17.jpg",
-            "/06d5f583-fa12-4e6f-86f2-6f848000af6f.jpg",
-            "/21564b05-23d0-46e9-9547-82811417bd86.jpg",
-            "/5adba766-def1-4c20-95a1-917db47af6ea.jpg",
+            "/gallery-5.jpg",
+            "/gallery-6.jpg",
+            "/gallery-7.jpg",
+            "/gallery-8.jpg",
           ].map((src, i) => (
             <div
               key={i}
