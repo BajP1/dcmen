@@ -5,7 +5,7 @@ const steps = [
     num: "01",
     title: "Consultation",
     desc: "We begin with an in-depth conversation about your style, occasion, and preferences. Understanding your vision is the first step in creating something truly personal.",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1000&q=80",
+    img: "/consultation.jpg",
   },
   {
     num: "02",
