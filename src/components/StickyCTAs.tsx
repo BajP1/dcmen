@@ -18,7 +18,7 @@ const StickyCTAs = () => {
         <Phone size={24} />
       </a>
       <a
-        href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone"
+        href="https://wa.me/919872887860?text=Hi%20DC%20Men'%20Zone"
         target="_blank"
         rel="noopener noreferrer"
         className="cta-float btn-whatsapp-glow w-14 h-14 rounded-full flex items-center justify-center text-whatsapp-foreground shadow-lg"

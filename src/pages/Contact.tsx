@@ -93,7 +93,7 @@ const Contact = () => {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment"
+                href="https://wa.me/919872887860?text=Hi%20DC%20Men'%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-glow inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-md text-sm tracking-wide uppercase transition-all duration-300"
