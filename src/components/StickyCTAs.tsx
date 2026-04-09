@@ -13,7 +13,7 @@ const StickyCTAs = () => {
         href="tel:+919872887860"
         className="cta-float btn-call-glow w-14 h-14 rounded-full flex items-center justify-center text-call-foreground shadow-lg"
         style={{ backgroundColor: "hsl(var(--call))" }}
-        aria-label="Call DC Men's Zone"
+        aria-label="Call DC Men' Zone"
       >
         <Phone size={24} />
       </a>

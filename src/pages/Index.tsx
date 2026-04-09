@@ -14,7 +14,7 @@ const HomePage = () => {
           <div className="w-full h-full scale-105">
             <img
               src={heroShowroom}
-              alt="DC Men's Zone showroom"
+              alt="DC Men' Zone showroom"
               className="w-full h-full object-cover animate-slow-zoom saturate-[1.1] sepia-[0.15] brightness-[0.9] blur-[1px]"
             />
           </div>
@@ -42,7 +42,7 @@ const HomePage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-5">
             <a
-              href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment"
+              href="https://wa.me/919872887860?text=Hi%20DC%20Men'%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-glow inline-flex items-center justify-center px-10 py-4 bg-primary text-primary-foreground font-semibold rounded-lg text-sm tracking-widest uppercase transition-all duration-300 hover:bg-primary/85 hover:-translate-y-0.5"
@@ -50,7 +50,7 @@ const HomePage = () => {
               Book Appointment
             </a>
             <a
-              href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone"
+              href="https://wa.me/919872887860?text=Hi%20DC%20Men'%20Zone"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp-glow inline-flex items-center justify-center px-10 py-4 rounded-lg text-sm tracking-widest uppercase font-semibold transition-all duration-300 hover:-translate-y-0.5"
@@ -71,7 +71,7 @@ const HomePage = () => {
               A Legacy of Fine Craftsmanship
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              At DC Men's Zone by Dhian Chand & Co., we blend timeless tailoring traditions with contemporary style. Every stitch tells a story of dedication, precision, and an unwavering commitment to making you look your absolute best.
+              At DC Men' Zone by Dhian Chand & Co., we blend timeless tailoring traditions with contemporary style. Every stitch tells a story of dedication, precision, and an unwavering commitment to making you look your absolute best.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Located in the heart of Amritsar, our atelier has dressed generations of gentlemen for life's most important moments — from boardroom meetings to wedding celebrations.
@@ -80,7 +80,7 @@ const HomePage = () => {
           <div className="scroll-fade-in scroll-fade-in-delay-2 img-hover-zoom rounded-lg overflow-hidden">
             <img
               src="/dc-mens-zone-logo.png"
-              alt="DC Men's Zone craftsmanship"
+              alt="DC Men' Zone craftsmanship"
               className="w-full h-[500px] object-cover"
               loading="lazy"
             />
@@ -198,7 +198,7 @@ const HomePage = () => {
           </p>
           <div className="scroll-fade-in flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment"
+              href="https://wa.me/919872887860?text=Hi%20DC%20Men'%20Zone%2C%20I%20would%20like%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-glow inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-md text-sm tracking-wide uppercase transition-all duration-300"

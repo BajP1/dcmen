@@ -46,8 +46,7 @@ const Contact = () => {
               <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-2">Hours</h3>
-                <p className="text-muted-foreground">Monday – Saturday: 10 AM – 8 PM</p>
-                <p className="text-muted-foreground">Sunday: By Appointment</p>
+                <p className="text-muted-foreground">Monday – Sunday: 10 AM – 9 PM</p>
               </div>
             </div>
 
@@ -59,19 +58,34 @@ const Contact = () => {
                   href="https://www.instagram.com/dcmenzone?igsh=NmdsenczMmdlbTEz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 border border-border text-muted-foreground rounded-md hover:border-foreground hover:text-foreground transition-all"
+                  className="p-3 border border-border rounded-md hover:border-foreground transition-all"
                   aria-label="Instagram"
                 >
-                  <Instagram size={22} />
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                    <defs>
+                      <linearGradient id="ig-gradient-contact" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#FFDC80" />
+                        <stop offset="25%" stopColor="#F77737" />
+                        <stop offset="50%" stopColor="#E1306C" />
+                        <stop offset="75%" stopColor="#C13584" />
+                        <stop offset="100%" stopColor="#833AB4" />
+                      </linearGradient>
+                    </defs>
+                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig-gradient-contact)" strokeWidth="2" />
+                    <circle cx="12" cy="12" r="5" stroke="url(#ig-gradient-contact)" strokeWidth="2" />
+                    <circle cx="17.5" cy="6.5" r="1.5" fill="url(#ig-gradient-contact)" />
+                  </svg>
                 </a>
                 <a
                   href="https://www.facebook.com/share/17RKLx5qmU/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 border border-border text-muted-foreground rounded-md hover:border-foreground hover:text-foreground transition-all"
+                  className="p-3 border border-border rounded-md hover:border-foreground transition-all"
                   aria-label="Facebook"
                 >
-                  <Facebook size={22} />
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="#1877F2">
+                    <path d="M24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.078V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H15.83c-1.491 0-1.956.925-1.956 1.875V12h3.328l-.532 3.469h-2.796v8.385C19.612 22.954 24 17.99 24 12z" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -105,7 +119,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="DC Men's Zone location"
+              title="DC Men' Zone location"
             />
           </div>
         </div>

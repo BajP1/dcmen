@@ -39,7 +39,7 @@ const Navbar = () => {
               isHero ? "text-[#F5F2ED]" : "text-foreground"
             }`}
           >
-            DC Men's Zone
+            DC Men' Zone
           </span>
           <span
             className={`text-[10px] md:text-xs tracking-[0.25em] uppercase transition-colors duration-400 ${
