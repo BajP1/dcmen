@@ -77,7 +77,7 @@ const OurCraft = () => {
           Book your fitting today and experience the art of bespoke tailoring.
         </p>
         <a
-          href="https://wa.me/919872887860?text=Hi%20DC%20Men's%20Zone%2C%20I%20would%20like%20to%20book%20a%20fitting"
+          href="https://wa.me/919872887860?text=Hi%20DC%20Men'%20Zone%2C%20I%20would%20like%20to%20book%20a%20fitting"
           target="_blank"
           rel="noopener noreferrer"
           className="scroll-fade-in btn-glow inline-flex items-center justify-center px-10 py-4 bg-primary text-primary-foreground font-medium rounded-md text-sm tracking-wide uppercase transition-all duration-300"
