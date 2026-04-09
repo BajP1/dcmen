@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { X, Instagram } from "lucide-react";
+import { X } from "lucide-react";
 
 const galleryImages = [
   { src: "/gallery-13.jpg", h: "h-[28rem]" },
