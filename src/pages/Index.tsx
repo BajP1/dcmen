@@ -156,6 +156,38 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Brands Section */}
+      <section className="py-24 px-6 lg:px-12 bg-secondary">
+        <div className="max-w-7xl mx-auto text-center mb-16">
+          <p className="scroll-fade-in text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">Trusted Partners</p>
+          <h2 className="scroll-fade-in font-serif text-3xl md:text-5xl font-bold text-foreground mb-4">
+            The Finest Brands, One Destination
+          </h2>
+          <p className="scroll-fade-in text-muted-foreground text-lg max-w-2xl mx-auto">
+            We bring together the most prestigious names in fabric and fashion under one roof.
+          </p>
+        </div>
+        <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-10 md:gap-16">
+          {[
+            { src: "/brand-raymond.jpg", alt: "Raymond" },
+            { src: "/brand-reid-taylor.jpg", alt: "Reid & Taylor" },
+            { src: "/brand-jhampstead.jpg", alt: "J. Hampstead" },
+          ].map((brand) => (
+            <div
+              key={brand.alt}
+              className="scroll-fade-in bg-card rounded-xl shadow-sm p-6 flex items-center justify-center w-56 h-40 md:w-64 md:h-44 hover:shadow-md transition-shadow duration-300"
+            >
+              <img
+                src={brand.src}
+                alt={brand.alt}
+                className="max-w-full max-h-full object-contain"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Gallery Preview */}
       <section className="py-24 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto text-center mb-16">
