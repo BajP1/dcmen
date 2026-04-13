@@ -7,8 +7,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
         {/* Brand */}
         <div>
-          <h3 className="font-serif text-2xl font-bold text-foreground mb-2">DC Men' Zone</h3>
-          <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">Dhian Chand & Co.</p>
+          <h3 className="font-serif text-2xl font-bold text-foreground mb-1">DC Men' Zone</h3>
+          <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">Dhian Chand & Co.</p>
+          <p className="text-[9px] tracking-[0.35em] uppercase text-muted-foreground/60 font-medium mb-4">— Since 1976 —</p>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Crafting excellence in men's fashion since generations. Bespoke tailoring and premium menswear in Amritsar.
           </p>
