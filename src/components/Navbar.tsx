@@ -48,6 +48,13 @@ const Navbar = () => {
           >
             Dhian Chand & Co.
           </span>
+          <span
+            className={`text-[8px] md:text-[9px] tracking-[0.35em] uppercase font-medium transition-colors duration-400 ${
+              isHero ? "text-[#F5F2ED]/40" : "text-muted-foreground/60"
+            }`}
+          >
+            — Since 1976 —
+          </span>
         </Link>
 
         {/* Desktop nav */}
