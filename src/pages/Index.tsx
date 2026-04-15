@@ -99,7 +99,7 @@ const HomePage = () => {
             {
               title: "Bespoke Tailoring",
               desc: "Custom-crafted suits tailored to your exact measurements and personal style.",
-              img: "/bespoke-tailoring.jpg",
+              img: "/bespoke-tailoring-new.jpg",
             },
             {
               title: "Ready-Made Collection",
