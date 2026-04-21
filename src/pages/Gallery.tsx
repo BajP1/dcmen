@@ -62,7 +62,17 @@ const galleryImages = [
   { src: "/gallery-65.jpg", h: "h-[28rem]" },
   { src: "/gallery-66.jpg", h: "h-80" },
   { src: "/gallery-67.jpg", h: "h-[28rem]" },
-  { src: "/gallery-68.jpg", h: "h-80" },
+    { src: "/gallery-68.jpg", h: "h-80" },
+    { src: "/gallery-69.jpg", h: "h-[28rem]" },
+    { src: "/gallery-70.jpg", h: "h-80" },
+    { src: "/gallery-71.jpg", h: "h-72" },
+    { src: "/gallery-72.jpg", h: "h-[28rem]" },
+    { src: "/gallery-73.jpg", h: "h-80" },
+    { src: "/gallery-74.jpg", h: "h-72" },
+    { src: "/gallery-75.jpg", h: "h-80" },
+    { src: "/gallery-76.jpg", h: "h-[28rem]" },
+    { src: "/gallery-77.jpg", h: "h-72" },
+    { src: "/gallery-78.jpg", h: "h-80" },
 ];
 
 const Gallery = () => {
