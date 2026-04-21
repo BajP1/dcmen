@@ -112,7 +112,7 @@ const Contact = () => {
           {/* Map */}
           <div className="scroll-fade-in scroll-fade-in-delay-2 rounded-lg overflow-hidden h-[500px] md:h-auto">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.5!2d74.8723!3d31.6340!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDM4JzAyLjQiTiA3NMKwNTInMjAuMyJF!5e0!3m2!1sen!2sin!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5!2d74.8736164!3d31.6257893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39197da2e72c6799%3A0x3611496b5a053f88!2sDC%20Men'%20Zone!5e0!3m2!1sen!2sin!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "500px" }}
